@@ -45,7 +45,7 @@ function displayWeatherData(data) {
     cityName.textContent = data.name;
     date.textContent = new Date(data.dt * 1000).toLocaleDateString(); 
     description.textContent = data.weather[0].description;
-    icon.src = 'http://openweathermap.org/img/wn/' + data.weather[0].icon + '@2x.png';
+    icon.src = 'http://openweathermap.org/img/wn/' + data.weather[0].icon + '.png';
     temperature.textContent = 'Temperature: ' + data.main.temp + '°C';
     feelsLike.textContent = 'Feels like: ' + data.main.feels_like + '°C';
     tempMin.textContent = 'Min. Temperature: ' + data.main.temp_min + '°C';
