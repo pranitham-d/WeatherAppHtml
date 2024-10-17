@@ -1,0 +1,84 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding: 20px;
+    background-color: #f0f0f0; /* Light gray background */
+  }
+  
+  #cityInput {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  #searchButton {
+    width: 100%;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #weatherInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  #icon {
+    width: 80px; /* Adjusted for smaller screens */
+    height: 80px; /* Adjusted for smaller screens */
+  }
+  
+  .popup {
+    display: none;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%; /* Adjust width for mobile */
+    max-width: 300px;
+    background-color: white;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+  
+  .popup-content {
+    padding: 20px;
+  }
+  
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  @media (max-width: 600px) { /* Adjust breakpoints as needed */
+    #icon {
+      width: 60px;
+      height: 60px;
+    }
+  }
+  body {
+    background-color: #e0ffff; /* Light cyan for abstract background */
+    background-image: url("https://www.transparenttextures.com/patterns/subtle-grunge.png"); /* Subtle grunge pattern */
+    background-repeat: repeat;
+    background-size: 20px 20px;
+  }
